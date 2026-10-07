@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаб 4 — Оюутны портал</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Оюутны портал</h1>
+            <p>Хичээл, мэдээлэл, сургалтын материал</p>
+        </div>
+    </header>
+
+    <nav class="navigation" aria-label="Үндсэн цэс">
+        <div class="container nav-content">
+            <a class="logo" href="#">STUDENT</a>
+
+            <ul class="nav-links">
+                <li><a href="#courses">Хичээлүүд</a></li>
+                <li><a href="#news">Мэдээлэл</a></li>
+                <li><a href="#contact">Холбоо барих</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container page-layout">
+        <main id="courses">
+            <h2 class="section-title">Миний хичээлүүд</h2>
+            <p class="section-description">
+                Суралцах хичээлээ сонгож, дэлгэрэнгүй мэдээлэлтэй танилцаарай.
+            </p>
+
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">🌐</div>
+                    <h3>Вэб зохиомж</h3>
+                    <p>HTML, CSS ашиглан вэб хуудасны бүтэц, загвар бүтээнэ.</p>
+                    <a class="card-link" href="#web">Дэлгэрэнгүй →</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">💻</div>
+                    <h3>Программчлал</h3>
+                    <p>Хувьсагч, нөхцөл, давталт болон функцийн үндсийг сурна.</p>
+                    <a class="card-link" href="#programming">Дэлгэрэнгүй →</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">🗃️</div>
+                    <h3>Өгөгдлийн сан</h3>
+                    <p>Хүснэгт, холбоос болон SQL асуулгын талаар судална.</p>
+                    <a class="card-link" href="#database">Дэлгэрэнгүй →</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">📊</div>
+                    <h3>Математик</h3>
+                    <p>Математикийн бодлого бодож, логик сэтгэлгээг хөгжүүлнэ.</p>
+                    <a class="card-link" href="#math">Дэлгэрэнгүй →</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">🔗</div>
+                    <h3>Компьютерын сүлжээ</h3>
+                    <p>Сүлжээний бүтэц, төхөөрөмж болон протоколыг судална.</p>
+                    <a class="card-link" href="#network">Дэлгэрэнгүй →</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">📘</div>
+                    <h3>Англи хэл</h3>
+                    <p>Мэргэжлийн үг хэллэг, унших болон бичих чадвараа хөгжүүлнэ.</p>
+                    <a class="card-link" href="#english">Дэлгэрэнгүй →</a>
+                </article>
+            </div>
+
+            <section class="course-details" aria-label="Хичээлийн мэдээлэл">
+                <h2 class="section-title">Хичээлийн дэлгэрэнгүй</h2>
+                <p id="web"><strong>Вэб зохиомж:</strong> Flexbox, Grid ашиглан
+                    дэлгэцийн хэмжээнд тохирох layout хийнэ.</p>
+                <p id="programming"><strong>Программчлал:</strong> Алгоритм
+                    боловсруулж, жижиг программ бичнэ.</p>
+                <p id="database"><strong>Өгөгдлийн сан:</strong> SQL ашиглан
+                    өгөгдөл нэмэх, хайх, засах дадлага хийнэ.</p>
+                <p id="math"><strong>Математик:</strong> Томьёо ашиглан бодлого
+                    бодож, шийдлээ тайлбарлана.</p>
+                <p id="network"><strong>Компьютерын сүлжээ:</strong> Дотоод
+                    сүлжээний холболт, IP хаяглалтыг судална.</p>
+                <p id="english"><strong>Англи хэл:</strong> Мэргэжлийн эх
+                    уншиж, шинэ үг хэллэг сурна.</p>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <section id="news" class="sidebar-section">
+                <h2>Зарлал</h2>
+                <p>Лаборатори 4-ийн ажлаа хийж, багшдаа шалгуулаарай.</p>
+                <span class="badge">Сургалтын мэдээлэл</span>
+            </section>
+
+            <section class="sidebar-section">
+                <h2>Хэрэгтэй холбоос</h2>
+                <ul class="sidebar-links">
+                    <li><a href="#courses">Хичээлийн жагсаалт</a></li>
+                    <li><a href="#web">Вэб зохиомжийн мэдээлэл</a></li>
+                    <li><a href="#contact">Холбоо барих</a></li>
+                </ul>
+            </section>
+
+            <section class="sidebar-section">
+                <h2>Суралцах зөвлөмж</h2>
+                <p>Кодоо тогтмол хадгалж, браузер дээр үр дүнг нь шалгаарай.</p>
+            </section>
+        </aside>
+    </div>
+
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Оюутны портал</p>
+            <p>Лаборатори 4 · Flexbox & Grid</p>
+        </div>
+    </footer>
+
+</body>
+</html>
